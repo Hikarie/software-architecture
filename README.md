@@ -14,6 +14,7 @@
   * validateEmailAddress(String_url) //验证是否为有效的邮件地址
   
 注： 
+
  a. 以上三个服务，返回发送邮件是否成功的信息。 
  b. 基于阿里云的邮件推送服务实现Web Service，阿里云的邮件推送服务地 址 https://dm.console.aliyun.com/。 
  c.validateEmailAddress方法使用正则表达式完成。
