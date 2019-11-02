@@ -7,6 +7,13 @@
   * 业务逻辑层：数据处理、数据分析（不少于三项统计分析功能）、数据查询；
   * 数据访问层：负责数据库的访问，主要职责为打开、关闭数据库、构建SQL查询、返回查询结果。
 2. 修改程序以适应三个逻辑层的分布式部署，要求三个逻辑分层分别部署于客户机（本机或手机）、AWS EC2应用服务器和AWC RDS数据库服务器上（即多层C/S架构），部署完成后能通过公网IP访问该系统。
-
-
-
+## 第3次实习上机
+1. 结合 SOA 风格，基于阿里云的邮件服务，实现一个发送电 子邮件消息的WebService服务，包括如下三个具体服务（提供基于SOAP 协议和 REST 风格的两种接口）： 
+  * sendEmail(String_url,String_payload) //邮件地址为_url，内容为_payload 
+  * sendEmailBatch(String[]_url,String_payload) //批量发送邮件   
+  * validateEmailAddress(String_url) //验证是否为有效的邮件地址 
+注： 
+ a. 以上三个服务，返回发送邮件是否成功的信息。 
+ b. 基于阿里云的邮件推送服务实现Web Service，阿里云的邮件推送服务地 址 https://dm.console.aliyun.com/。 
+ c.validateEmailAddress方法使用正则表达式完成。
+2. 两种客户端：桌面版和Web版。
